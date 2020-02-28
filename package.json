@@ -1,10 +1,7 @@
 {
-  "name": "nodebb-theme-quickstart",
+  "name": "nodebb-theme-eastcode",
   "version": "0.0.0",
-  "description": "Enter a description here",
+  "description": "A theme for Eastcode forum",
   "main": "theme.less",
-  "keywords": [
-
-  ],
   "license": "MIT"
 }
