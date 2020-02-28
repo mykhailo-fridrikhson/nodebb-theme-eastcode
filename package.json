@@ -3,5 +3,9 @@
   "version": "0.0.0",
   "description": "A theme for Eastcode forum",
   "main": "theme.less",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mykhailo-fridrikhson/nodebb-theme-eastcode"
+  }
 }
