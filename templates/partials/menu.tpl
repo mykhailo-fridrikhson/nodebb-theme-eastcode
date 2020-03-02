@@ -3,10 +3,6 @@
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars"></i>
 				</button>
-				<button type="button" class="navbar-toggle hidden" id="mobile-chats">
-					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
-					<i class="fa fa-lg fa-comment-o"></i>
-				</button>
 
 				<!-- IF brand:logo -->
 				<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
@@ -28,8 +24,8 @@
 				<!-- IF !maintenanceHeader -->
 
 				<div class="link-container">
-					<a href="http://stg.stcode.site/" class="eastcode-link projects">Projects</a>
-					<a href="http://stg.forum.stcode.site" class="eastcode-link">Knowledge Base</a>
+					<a class="eastcode-link projects" id="projects-link">Projects</a>
+					<a class="eastcode-link" id="knowledge-base-link">Knowledge Base</a>
 				</div>
 
 				<!-- IF config.loggedIn -->
@@ -157,30 +153,6 @@
 						<a href="#" id="reconnect" class="hide" title="Connection to {config.siteTitle} has been lost, attempting to reconnect...">
 							<i class="fa fa-check"></i>
 						</a>
-					</li>
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
-					<li class="dropdown">
-						<a><i class="fa fa-angle-double-up pointer fa-fw pagetop"></i></a>
-						<a><i class="fa fa-angle-up pointer fa-fw pageup"></i></a>
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<span class="pagination-text"></span>
-						</a>
-
-						<a><i class="fa fa-angle-down pointer fa-fw pagedown"></i></a>
-						<a><i class="fa fa-angle-double-down pointer fa-fw pagebottom"></i></a>
-
-						<div class="progress-container">
-							<div class="progress-bar"></div>
-						</div>
-
-						<ul class="dropdown-menu" role="menu">
-							<li>
-  								<input type="text" class="form-control" id="indexInput" placeholder="[[global:pagination.enter_index]]">
-  							</li>
-						</ul>
 					</li>
 				</ul>
 
